@@ -76,7 +76,7 @@ public class Tortuga {
 		return direccion;
 	}
 
-	void cambiarDireccion() { //agregar a git
+	void cambiarDireccion() {
 		this.direccion = !this.direccion;
 	}
 	
