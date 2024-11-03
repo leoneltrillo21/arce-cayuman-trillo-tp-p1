@@ -250,7 +250,7 @@ public class Juego extends InterfaceJuego
 		pisandoIslaPep();
 		caballeroPerdio();
 	}
-	private void chequearTeclas() { //agregar a git
+	private void chequearTeclas() {
 		if(entorno.estaPresionada(entorno.TECLA_DERECHA) && !tocoPared()) {
 			pep.mover(2);
 			if(tocoPared()) pep.setX(pep.getX()- 2);
@@ -307,7 +307,7 @@ public class Juego extends InterfaceJuego
 		tortugasEliminadas();
 		reinicioTortugas();
 	}	
-	private void moverTortuga(Tortuga tortuga, Isla isla) { // agregar a git
+	private void moverTortuga(Tortuga tortuga, Isla isla) {
 		if(tortuga.isDireccion()) { // Dirección = false : derecha.
 			tortuga.setX(tortuga.getX() - tortuga.getVelocidad());
 			if(tortuga.estaAfuera()) tortuga.cambiarDireccion(); // Si llega al borde de la ventana solo cambia de dirección.
